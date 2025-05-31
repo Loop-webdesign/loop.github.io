@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Pixel Craft</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-top: 100px;
+      margin: 0;
+    }
+    .portfolio-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .project-card {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .project-card .content {
+      padding: 20px;
+    }
+    .project-card h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: rgb(246, 182, 182);
+    }
+    .project-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+    h1.page-title {
+      text-align: center;
+      margin-bottom: 20px;
+      color: rgb(246, 182, 182);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+       <a href="index.html"> Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="templates.html">Templates</a>
+        <a href="error.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="iPhone.html">About</a>
+        <a href="iPhone.html">Contact</a>
+    </nav>
+  </header>
+
+  <h1 class="page-title">My Work</h1>
+
+  <div class="portfolio-container">
+    <div class="project-card">
+      <img src="project1.png" alt="Project 1">
+      <div class="content">
+        <h3>Modern Business Site</h3>
+        <p>Clean layout and animations built for a consulting firm using HTML, CSS, and JS.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="project2.png" alt="Project 2">
+      <div class="content">
+        <h3>E-Commerce Layout</h3>
+        <p>Responsive online store mockup created for a fashion brand with modern UI/UX.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="project3.png" alt="Project 3">
+      <div class="content">
+        <h3>Portfolio Template</h3>
+        <p>Single-page portfolio site template ideal for designers and freelancers.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing | Pixel Craft</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding-top: 100px;
+    }
+
+    .pricing-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .pricing-card {
+      background-color: #1a1a1a;
+      color: white;
+      border-radius: 12px;
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s;
+    }
+
+    .pricing-card:hover {
+      transform: scale(1.05);
+    }
+
+    .pricing-card h2 {
+      color: rgb(246, 182, 182);
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .pricing-card ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 15px;
+    }
+
+    .pricing-card ul li {
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+
+    h1.page-title {
+      text-align: center;
+      color: rgb(246, 182, 182);
+      margin-bottom: 30px;
+    }
+
+    nav {
+      display: flex;
+      gap: 40px;
+      background: rgba(6, 6, 6, 0.9);
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: rgb(246, 182, 182);
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: gray;
+    }
+
+    .logo {
+      height: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+        <a href="index.html"> Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="templates.html">Templates</a>
+        <a href="error.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="iPhone.html">About</a>
+        <a href="iPhone.html">Contact</a>
+    </nav>
+  </header>
+
+  <h1 class="page-title">Pricing</h1>
+
+  <div class="pricing-container">
+    <div class="pricing-card">
+      <h2>Starter ( 50% OFF ) </h2>
+      <p class="price">$199</p>
+      <ul>
+        <li>1-page template</li>
+        <li>Basic contact form</li>
+        <li>Mobile responsive</li>
+      </ul>
+    </div>
+    <div class="pricing-card">
+      <h2>Professional</h2>
+      <p class="price">$250</p>
+      <ul>
+        <li>Multi-page custom site</li>
+        <li>Dynamic</li>
+        <li>1 round of revisions</li>
+      </ul>
+    </div>
+    <div class="pricing-card">
+      <h2>Premium</h2>
+      <p class="price">$699</p>
+      <ul>
+        <li>Full custom design</li>
+        <li>Advanced features</li>
+        <li>Ongoing support</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

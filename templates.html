@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Templates | Pixel Craft</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding-top: 100px;
+    }
+
+    .template-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .template-card {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s;
+    }
+
+    .template-card:hover {
+      transform: scale(1.03);
+    }
+
+    .template-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .template-card .content {
+      padding: 20px;
+    }
+
+    .template-card h3 {
+      margin-top: 0;
+      color: rgb(246, 182, 182);
+    }
+
+    .template-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    h1.page-title {
+      text-align: center;
+      color: rgb(246, 182, 182);
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+ <a href="index.html"> Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="templates.html">Templates</a>
+        <a href="error.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="iPhone.html">About</a>
+        <a href="iPhone.html">Contact</a>
+    </nav>
+  </header>
+
+  <h1 class="page-title">Affordable Templates</h1>
+
+  <div class="template-container">
+    <div class="template-card">
+      <img src="template1.jpg" alt="Template 1">
+      <div class="content">
+        <h3>Personal Portfolio</h3>
+        <p>Simple and sleek one-page layout. Ideal for freelancers or creatives. $49</p>
+      </div>
+    </div>
+
+    <div class="template-card">
+      <img src="template2.jpg" alt="Template 2">
+      <div class="content">
+        <h3>Startup Landing Page</h3>
+        <p>Designed for tech startups or apps. Responsive and customizable. $59</p>
+      </div>
+    </div>
+
+    <div class="template-card">
+      <img src="template3.jpg" alt="Template 3">
+      <div class="content">
+        <h3>Business Website</h3>
+        <p>Professional multi-page design for service businesses. $69</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
